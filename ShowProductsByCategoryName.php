@@ -5,12 +5,12 @@
             <div class="row">
                 <div class="col-12">
                     <div class="page-header-content">
-                        <h2 class="title" data-aos="fade-down" data-aos-duration="1000">Product Page</h2>
+                        <h2 class="title" data-aos="fade-down" data-aos-duration="1000"><?=$category[0]['category_name']?></h2>
                         <nav class="breadcrumb-area" data-aos="fade-down" data-aos-duration="1200">
                             <ul class="breadcrumb">
                                 <li><a href="index.php">Home</a></li>
                                 <li class="breadcrumb-sep">//</li>
-                                <li>Product Page</li>
+                                <li><?=$category[0]['category_name']?></li>
                             </ul>
                         </nav>
                     </div>
@@ -57,7 +57,7 @@
                                 <div class="tab-pane fade show active" id="nav-grid" role="tabpanel" aria-labelledby="nav-grid-tab">
                                     <div class="row">
 
-                                        <?php foreach ($products as $pro) {  ?>
+                                        <?php foreach ($productCategory as $pro) {  ?>
 
                                             <div class="col-sm-6 col-lg-4">
                                                 <!--== Start Product Item ==-->
